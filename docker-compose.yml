@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  target-tracker:
+    build: .
+    image: uav-target-tracker:latest
+    container_name: uav-target-tracker
+    volumes:
+      - ./:/app/output
+    command: python main.py
