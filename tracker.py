@@ -68,6 +68,7 @@ class Tracker:
         matches, unmatched_tracks, unmatched_detections = hungarian_assignment(cost_matrix)
         
         for t, d in matches:
+            t, d = int(t), int(d)
             if cost_matrix[t, d] < 0.7:
                 self.tracks[t].update(detections[d]['bbox'])
             else:
@@ -75,6 +76,7 @@ class Tracker:
                 unmatched_detections = np.append(unmatched_detections, d)
                 
         for d in unmatched_detections:
+            d = int(d)
             new_track = Track(detections[d]['bbox'], self.next_id, detections[d]['class_name'])
             self.tracks.append(new_track)
             self.next_id += 1
