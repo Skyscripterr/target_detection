@@ -42,7 +42,9 @@ target_detection/
 ├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
 
-⚙️ Installation & Setup
+--- 
+
+## ⚙️ Installation & Setup
 
 1.Clone the repository:
 git clone [https://github.com/Skyscripterr/target_detection.git](https://github.com/Skyscripterr/target_detection.git)
@@ -56,23 +58,34 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-🚀 Usage
+---
+
+## 🚀 Usage
 ​Run the detection pipeline on a test video or live camera stream:
 python main.py --source data/test_video.mp4 --conf 0.5 --save-output
 
+---
 
-
-Key Parameters:
+## Key Parameters:
 ​--source: Path to input video file, image folder, or camera index (e.g., 0).
 ​--conf: Confidence threshold for target detection (default: 0.45).
 ​--save-output: Flag to record and save processed video results to disk.
-​📈 Roadmap & Future Improvements
+
+---
+
+## ​📈 Roadmap & Future Improvements
 ​[ ] Edge Optimization: Export trained models to ONNX and TensorRT for low-latency onboard deployment.
 ​[ ] Sensor Fusion: Integrate GPS/IMU telemetry data to map pixel coordinates into global latitude/longitude coordinates.
 ​[ ] MAVLink Integration: Stream target lock coordinates directly to flight controllers for autonomous tracking loops.
-​👩‍💻 Author
+
+---
+
+## ​👩‍💻 Author
 ​Lady Min (Skyscripterr)
 Multidisciplinary Engineer | UAV, Avionics & AI Systems
 GitHub Profile
-​📝 License
+
+---
+
+## ​📝 License
 ​Distributed under the MIT License. See LICENSE for more information.
