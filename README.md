@@ -41,7 +41,7 @@ target_detection/
 ├── main.py             # Entry point for running real-time or batch detection
 ├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
-
+```
 --- 
 
 ## ⚙️ Installation & Setup
